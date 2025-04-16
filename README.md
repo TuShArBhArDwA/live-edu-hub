@@ -31,6 +31,26 @@
    git clone https://github.com/TuShArBhArDwA/live-edu-hub.git
    cd live-edu-hub
 ```
+### 2. Install Dependencies
+```bash
+   composer install
+   npm install && npm run dev
+```
+### 3. Setup Environment
+Copy `.env.example` to `.env` and set your DB credentials:
+```bash
+   cp .env.example .env
+   php artisan key:generate
+```
+### 4. Run Migrations
+```bash
+   php artisan migrate
+```
+### 5. Serve the App
+```bash
+   php artisan serve
+```
+Visit: `http://localhost:8000`
 
 ---
 
